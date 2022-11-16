@@ -34,11 +34,9 @@ install-man3:
 	@cp ./rfc6350.3 $(DESTDIR)$(PREFIX)/share/man/man3
 ## -- manpages --
 ## -- license --
-ifneq ($(PREFIX),)
 install: install-license
 install-license: LICENSE
 	@echo 'I share/doc/c-vcard2rec/LICENSE'
 	@mkdir -p $(DESTDIR)$(PREFIX)/share/doc/c-vcard2rec
 	@cp LICENSE $(DESTDIR)$(PREFIX)/share/doc/c-vcard2rec
-endif
 ## -- license --
